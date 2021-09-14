@@ -92,7 +92,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "test": "react-scripts test",
-    "build": "rimraf ./node_modules/.cache/eslint-loader && cross-env GENERATE_SOURCEMAP=false react-app-rewired --max-old-space-size=4096 build",
+    "build": "rm -rf ./node_modules/.cache/eslint-loader && cross-env GENERATE_SOURCEMAP=false react-app-rewired --max-old-space-size=4096 build",
     "rimraf": "./node_modules/rimraf/bin.js",
     "format:staged": "lint-staged",
     "ipfs-deploy": "ipfs-deploy build --pinner pinata --no-open --no-clipboard",
